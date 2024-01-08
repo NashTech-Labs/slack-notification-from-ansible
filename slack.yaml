@@ -1,0 +1,9 @@
+---
+- name: Send Slack Notification
+  hosts: server1
+  gather_facts: false
+  tasks:
+    - name: Send a message to slack channel
+      slack:
+      token: <slack token>
+      msg: slack message configure now
